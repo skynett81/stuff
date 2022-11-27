@@ -1,12 +1,15 @@
 #!/bin/bash
 
+echo -e $TEXT_YELLOW
 greeting="Welcome"
 user=$(whoami)
 day=$(date +%A)
+echo -e $TEXT_RESET
 
+echo -e $TEXT_YELLOW
 echo "$greeting back $user! Today is $day, which is the best day of the entire week!"
 echo "Your Bash shell version is: $BASH_VERSION. Enjoy!"
-
+echo -e $TEXT_RESET
 
 TEXT_RESET='\e[0m'
 TEXT_YELLOW='\e[0;33m'
